@@ -1,0 +1,1687 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(240, 205, 205);
+
+}
+
+
+.carousel-item {
+	height: 80vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 170px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+    font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: 'Luxurious Roman', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000000,
+    1px 2px 1px #000000,
+    1px 3px 1px #000000,
+    1px 4px 1px #000000,
+    1px 5px 1px #000000,
+    1px 6px 1px #000000,
+    1px 7px 1px #000000,
+    1px 8px 1px #000000,
+    1px 9px 1px #000000,
+    1px 10px 1px #000000,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+    font-weight: bolder;
+	line-height: 1.9;
+	font-family: poppins;
+    color: rgb(255, 255, 255);
+}
+
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #ffffff;
+	padding: 10px 30px;
+	display: inline-block;
+	color: rgb(0, 0, 0);
+	margin-top: 15px;
+}
+.bn{
+    font-size: 15px;
+    /* width: 150px; */
+
+}
+.bn:hover{
+    background: rgb(255, 44, 44);
+    box-shadow: 0 0 5px rgb(255, 44, 44),0 0 25px rgb(255, 44, 44),0 0 50px rgb(255, 44, 44),0 0 200px rgb(255, 44, 44);
+
+  }
+.navbar{
+    background: transparent;
+    transition: 1s ease;
+    padding: 20px;
+}
+.test{
+    background-color:rgba(0, 0, 0, 0.623) ;
+    padding: 5px 0px;
+    /* display: none; */
+}
+.navbar-nav a {
+	font-family: poppins;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+    font-family: 'Luxurious Roman', cursive;
+}
+.navbar-light .navbar-brand {
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 2px;
+    font-family: 'Luxurious Roman', cursive;
+    text-shadow: 1px 1px 1px #000000,
+        1px 2px 1px #000000,
+        1px 3px 1px #000000,
+        1px 4px 1px #000000,
+        1px 5px 1px #000000,
+        1px 6px 1px #000000,
+        1px 7px 1px #000000,
+        1px 8px 1px #000000,
+        1px 9px 1px #000000,
+        1px 10px 1px #000000,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #fff;
+    text-shadow: 1px 1px 1px #000000,
+        1px 2px 1px #000000,
+        1px 3px 1px #000000,
+        1px 4px 1px #000000,
+        1px 5px 1px #000000,
+        1px 6px 1px #000000,
+        1px 7px 1px #000000,
+        1px 8px 1px #000000,
+        1px 9px 1px #000000,
+        1px 10px 1px #000000,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000000,
+        1px 2px 1px #000000,
+        1px 3px 1px #000000,
+        1px 4px 1px #000000,
+        1px 5px 1px #000000,
+        1px 6px 1px #000000,
+        1px 7px 1px #000000,
+        1px 8px 1px #000000,
+        1px 9px 1px #000000,
+        1px 10px 1px #000000,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+
+}
+
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: #fff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.navbar-light .navbar-brand:hover{
+    color: rgb(255, 44, 44);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: rgb(255, 44, 44);
+}
+.w-100 {
+	height: 100vh;
+}
+
+.cl{
+    color: rgb(0, 0, 0);
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 2px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Luxurious Roman', cursive;
+    text-shadow: 1px 1px 1px rgb(255, 44, 44),
+        1px 2px 1px rgb(255, 44, 44),
+        1px 3px 1px rgb(255, 44, 44),
+        1px 4px 1px rgb(255, 44, 44),
+        1px 5px 1px rgb(255, 44, 44),
+        1px 6px 1px rgb(255, 44, 44),
+        1px 7px 1px rgb(255, 44, 44),
+        1px 8px 1px rgb(255, 44, 44),
+        1px 9px 1px rgb(255, 44, 44),
+        1px 10px 1px rgb(255, 44, 44),
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+
+}
+.icon{
+
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 20px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid-black;
+	border-radius: 50%;
+
+}
+.main{
+    width:100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.service{
+    background: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transition: transform .8s;
+
+}
+.service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #fff;
+    border: 18px solid white;
+}
+.service-logo img{
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+    transition: transform 1s;
+
+}
+.service h4{
+    height: 35px;
+    width: 80%;
+    background: black;
+    margin: 50px auto;
+    position : relative;
+}
+.service h4::after{
+    content:'';
+    width:80px;
+    height: 40px;
+    background: linear-gradient(to right,#262626, #fff);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.service h4::before{
+    content:'';
+    width:80px;
+    height: 40px;
+    background: linear-gradient(to right, #fff,#262626);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadowone{
+    height: 200px;
+    width: 80%;
+    background: #000000;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    transition: transform .8s;
+}
+
+.shadowtwo{
+    height: 200px;
+    width: 64%;
+    background: #000000;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+.main:hover .service{
+    transform: translateY(-50px);
+}
+.main:hover .shadowone{
+    transform: translateY(-25px);
+}
+
+.main:hover img{
+    transform: rotate(360deg);
+}
+.s{
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+    pad: 0px;
+
+  }
+  .shadowss{
+    height: 200px;
+    width: 70%;
+    background: #000000;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    transition: transform .8s;
+}
+
+.shadowsss{
+    height: 200px;
+    width: 57%;
+    background: #000000;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+.main:hover .service{
+    transform: translateY(-50px);
+}
+.main:hover .shadowss{
+    transform: translateY(-25px);
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0.8);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+	}
+
+}
+
+@media only screen and (max-width: 1500px) {
+    .carousel-caption {
+        bottom: 160px;
+    }
+    .carousel-item {
+        height: 80vh;
+        min-height: 300px;
+    }
+    .carousel-caption h5 {
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 18px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 50%;
+        margin: auto;
+        font-size: 15px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .icon{
+
+        font-size: 40px;
+        margin: 20px auto;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        border: 1px solid-black;
+        border-radius: 50%;
+
+    }
+    .main{
+        width:100%;
+        min-height: 380px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .service{
+        background: rgb(0, 0, 0);
+        padding: 30px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        transition: transform .8s;
+
+    }
+    .service-logo{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: -90px auto 0;
+        background: #fff;
+        border: 18px solid white;
+    }
+    .service-logo img{
+        width: 50px;
+        margin-top: 30px;
+        margin-left: 20px;
+        transition: transform 1s;
+
+    }
+    .service h4{
+        height: 35px;
+        width: 80%;
+        background: black;
+        margin: 50px auto;
+        position : relative;
+    }
+    .service h4::after{
+        content:'';
+        width:80px;
+        height: 40px;
+        background: linear-gradient(to right,#262626, #fff);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+    }
+    .service h4::before{
+        content:'';
+        width:80px;
+        height: 40px;
+        background: linear-gradient(to right, #fff,#262626);
+        position: absolute;
+        left: -5px;
+        bottom: -5px;
+        z-index: -1;
+    }
+    .shadowone{
+        height: 200px;
+        width: 80%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 10%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 200px;
+        width: 64%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 18%;
+        z-index: -2;
+    }
+    .main:hover .service{
+        transform: translateY(-50px);
+    }
+    .main:hover .shadowone{
+        transform: translateY(-25px);
+    }
+    .shadowss{
+        height: 200px;
+        width: 70%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 10%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 57%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 18%;
+        z-index: -2;
+    }
+    .main:hover .service{
+        transform: translateY(-50px);
+    }
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .carousel-item {
+        height: 80vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom: 140px;
+    }
+    .carousel-caption h5 {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 50%;
+        margin: auto;
+        font-size: 12px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .icon{
+
+        font-size: 40px;
+        margin: 20px auto;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        border: 1px solid-black;
+        border-radius: 50%;
+
+    }
+    .main{
+        width:100%;
+        min-height: 380px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .service{
+        background: rgb(0, 0, 0);
+        padding: 27px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        transition: transform .8s;
+
+    }
+    .service-logo{
+        width: 125x;
+        height: 130px;
+        border-radius: 50%;
+        margin: -90px auto 0;
+        background: #fff;
+        border: 18px solid white;
+    }
+    .service-logo img{
+        width: 50px;
+        margin-top: 30px;
+        margin-left: 20px;
+        transition: transform 1s;
+
+    }
+    .service h4{
+        height: 33px;
+        width: 78%;
+        background: black;
+        margin: 50px auto;
+        position : relative;
+    }
+    .service h4::after{
+        content:'';
+        width:70px;
+        height: 30px;
+        background: linear-gradient(to right,#262626, #fff);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+    }
+    .service h4::before{
+        content:'';
+        width:70px;
+        height: 30px;
+        background: linear-gradient(to right, #fff,#262626);
+        position: absolute;
+        left: -5px;
+        bottom: -5px;
+        z-index: -1;
+    }
+    .shadowone{
+        height: 180px;
+        width: 75%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 10%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 180px;
+        width: 60%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 18%;
+        z-index: -2;
+    }
+    .main:hover .service{
+        transform: translateY(-50px);
+    }
+    .main:hover .shadowone{
+        transform: translateY(-25px);
+    }
+    .shadowss{
+        height: 200px;
+        width: 78%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 10%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 54%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 22%;
+        z-index: -2;
+    }
+
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+
+}
+@media only screen and (max-width: 992px){
+    .icon{
+
+        font-size: 35px;
+        margin: 20px auto;
+        padding: 20px;
+        height: 70px;
+        width: 70px;
+        border: 1px solid-black;
+        border-radius: 50%;
+
+    }
+    .main{
+        width:100%;
+        min-height: 360px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .service{
+        background: rgb(0, 0, 0);
+        padding: 18px;
+        /* margin:20px; */
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        transition: transform .8s;
+
+    }
+    .service-logo{
+        width: 110x;
+        height: 110px;
+        border-radius: 50%;
+        margin: -90px auto 0;
+        background: #fff;
+        border: 18px solid white;
+    }
+    .service-logo img{
+        width: 50px;
+        margin-top: 30px;
+        margin-left: 20px;
+        transition: transform 1s;
+
+    }
+    .service h4{
+        height: 27px;
+        width: 90%;
+        background: black;
+        margin: 50px auto;
+        position : relative;
+    }
+    .service h4::after{
+        content:'';
+        width:60px;
+        height: 30px;
+        background: linear-gradient(to right,#262626, #fff);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+    }
+    .service h4::before{
+        content:'';
+        width:60px;
+        height: 20px;
+        background: linear-gradient(to right, #fff,#262626);
+        position: absolute;
+        left: -5px;
+        bottom: -5px;
+        z-index: -1;
+    }
+    .shadowone{
+        height: 165px;
+        width: 72%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 15%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 165px;
+        width: 57%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 22%;
+        z-index: -2;
+    }
+    .main:hover .service{
+        transform: translateY(-50px);
+    }
+    .main:hover .shadowone{
+        transform: translateY(-25px);
+    }
+}
+@media only screen and (max-width: 950px) {
+    .carousel-item {
+        height: 70vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom: 100px;
+    }
+    .carousel-caption h5 {
+        font-size: 28px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 50%;
+        margin: auto;
+        font-size: 15px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+}
+@media only screen and (max-width: 865px) {
+   .cl{
+    font-size: 40px;
+}
+    .carousel-item {
+        height: 70vh;
+        min-height: 300px;
+        /* width: 100vh; */
+    }
+    .carousel-caption {
+        bottom: 90px;
+    }
+    .carousel-caption h5 {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 70px;
+        font-family: merienda;
+        text-align: center;
+        /* top: 50px; */
+    }
+    .carousel-caption p {
+        width: 70%;
+        margin: auto;
+        font-size: 15px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    .icon{
+
+        font-size: 35px;
+        margin: 20px auto;
+        padding: 20px;
+        height: 70px;
+        width: 70px;
+        border: 1px solid-black;
+        border-radius: 50%;
+
+    }
+    .main{
+        width:100%;
+        min-height: 360px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .service{
+        background: rgb(0, 0, 0);
+        padding: 18px;
+        margin-left:100px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        transition: transform .8s;
+
+    }
+    .service-logo{
+        width: 110x;
+        height: 110px;
+        border-radius: 50%;
+        margin: -90px auto 0;
+        background: #fff;
+        border: 18px solid white;
+    }
+    .service-logo img{
+        width: 50px;
+        margin-top: 30px;
+        margin-left: 20px;
+        transition: transform 1s;
+
+    }
+    .service h4{
+        height: 27px;
+        width: 90%;
+        background: black;
+        margin: 50px auto;
+        position : relative;
+    }
+    .service h4::after{
+        content:'';
+        width:60px;
+        height: 30px;
+        background: linear-gradient(to right,#262626, #fff);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+    }
+    .service h4::before{
+        content:'';
+        width:60px;
+        height: 30px;
+        background: linear-gradient(to right, #fff,#262626);
+        position: absolute;
+        left: -5px;
+        bottom: -5px;
+        z-index: -1;
+    }
+    .shadowone{
+        height: 165px;
+        width: 50%;
+        background: #000000;
+        position: absolute;
+        margin-left:100px;
+        border-radius: 10px;
+        bottom: 0;
+        left: 5%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 165px;
+        width: 44%;
+        background: #000000;
+        position: absolute;
+        margin-left:100px;
+        border-radius: 10px;
+        bottom: 0;
+        left: 8%;
+        z-index: -3;
+    }
+    .main:hover .service{
+        transform: translateY(-50px);
+    }
+    .main:hover .shadowone{
+        transform: translateY(-25px);
+    }
+    .shadowss{
+        height: 200px;
+        width: 50%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 10%;
+        z-index: -1;
+        transition: transform .8s;
+        margin-left: 70px;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 40%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 29%;
+        z-index: -2;
+    }
+
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+
+
+}
+@media only screen and (max-width: 750px) {
+    .cl{
+        font-size: 35px;
+    }
+    .navbar-light .navbar-brand {
+        color: #fff;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .carousel-item {
+        height: 60vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom:50px;
+    }
+    .carousel-caption h5 {
+        font-size: 26px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 45px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 70%;
+        margin: auto;
+        font-size: 12px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+}
+@media only screen and (max-width: 580px) {
+
+    .service{
+        margin-left:90px;
+    }
+
+
+
+    .shadowone{
+        height: 165px;
+        width: 50%;
+        margin-left:90px;
+        left: 5%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 165px;
+        width: 44%;
+        margin-left:90px;
+        left: 8%;
+        z-index: -3;
+    }
+
+    .cl{
+        font-size: 38px;
+    }
+    .navbar-light .navbar-brand {
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .carousel-item {
+        height: 55vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom: 70px;
+    }
+    .carousel-caption h5 {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 55px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 70%;
+        margin: auto;
+        font-size: 9px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .shadowss{
+        height: 200px;
+        width: 45%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 8%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 38%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 25%;
+        z-index: -2;
+    }
+
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+
+}
+@media only screen and (max-width: 470px) {
+
+    .service{
+        margin-left:60px;
+    }
+
+
+
+    .shadowone{
+        height: 165px;
+        width: 50%;
+        margin-left:60px;
+        left: 11%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 165px;
+        width: 44%;
+        margin-left:60px;
+        left: 14%;
+        z-index: -3;
+    }
+    .shadowss{
+        height: 200px;
+        width: 45%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 8%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 38%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 27%;
+        z-index: -2;
+    }
+
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+}
+@media only screen and (max-width: 430px) {
+    .cl{
+        font-size: 33px;
+    }
+    .navbar-light .navbar-brand {
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .carousel-item {
+        height: 40vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom: 60px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 67px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 70%;
+        margin: auto;
+        font-size: 8px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .service{
+        margin-left:45px;
+    }
+
+
+
+    .shadowone{
+        height: 165px;
+        width: 50%;
+        margin-left:45px;
+        left: 15%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 165px;
+        width: 44%;
+        margin-left:45px;
+        left: 18%;
+        z-index: -3;
+    }
+    .shadowss{
+        height: 200px;
+        width: 45%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 8%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 38%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 30%;
+        z-index: -2;
+    }
+
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+
+}
+
+@media only screen and (max-width: 398px) {
+
+    .cl{
+        font-size: 30px;
+    }
+    .navbar-light .navbar-brand {
+        color: #fff;
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .carousel-item {
+        height: 40vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom: 40px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 75px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 70%;
+        margin: auto;
+        font-size: 9px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .service{
+        margin-left:30px;
+    }
+
+
+
+    .shadowone{
+        height: 165px;
+        width: 50%;
+        margin-left:30px;
+        left: 20%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 165px;
+        width: 44%;
+        margin-left:30px;
+        left: 23%;
+        z-index: -3;
+    }
+    .shadowss{
+        height: 200px;
+        width: 47%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 5%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 39%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 28%;
+        z-index: -2;
+    }
+
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+
+}
+@media only screen and (max-width: 380px) {
+
+    .service{
+        margin-left:10px;
+    }
+
+
+
+    .shadowone{
+        height: 165px;
+        width: 50%;
+        margin-left:10px;
+        left: 20%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowtwo{
+        height: 165px;
+        width: 44%;
+        margin-left:10px;
+        left: 23%;
+        z-index: -3;
+    }
+    .shadowss{
+        height: 200px;
+        width: 45%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 3%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 38%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 27%;
+        z-index: -2;
+    }
+
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+}
+@media only screen and (max-width: 330px) {
+    .cl{
+        font-size: 30px;
+    }
+    .navbar-light .navbar-brand {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+        font-family: 'Luxurious Roman', cursive;
+    }
+
+    .carousel-item {
+        height: 40vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom: 30px;
+    }
+    .carousel-caption h5 {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 80px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 70%;
+        margin: auto;
+        font-size: 9px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+}
+@media only screen and (max-width: 308px) {
+    .cl{
+        font-size: 28px;
+    }
+    .navbar-light .navbar-brand {
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: #fff;
+        font-family: 'Luxurious Roman', cursive;
+    }
+    .carousel-item {
+        height: 40vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom: 25px;
+    }
+    .carousel-caption h5 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 70px;
+        font-family: merienda;
+        text-align: center;
+    }
+    .carousel-caption p {
+        width: 50%;
+        margin: auto;
+        font-size: 7px;
+        line-height: 1.9;
+        font-family: poppins;
+    }
+    .carousel-caption a {
+        text-transform: uppercase;
+        background: #262626;
+        padding: 10px 30px;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .shadowss{
+        height: 200px;
+        width: 45%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 3%;
+        z-index: -1;
+        transition: transform .8s;
+    }
+
+    .shadowsss{
+        height: 200px;
+        width: 34%;
+        background: #000000;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 37%;
+        z-index: -2;
+    }
+
+    .main:hover .shadowss{
+        transform: translateY(-25px);
+    }
+
+}
+
+
+
+
+
+
+
+
+::selection{
+    background: #e82a63;
+    color: rgb(8, 0, 0);
+  }
+  .accordion{
+    display: flex;
+    max-width: 1010px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 45px 90px 45px 60px;
+  }
+  .accordion .image-box{
+    height: 360px;
+    width: 300px;
+  }
+  .accordion .image-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .accordion .accordion-text{
+    width: 60%;
+  }
+  .accordion .accordion-text .title{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(255, 44, 44);
+    font-family: 'Fira Sans', sans-serif;
+  }
+  .accordion .accordion-text .faq-text{
+    margin-top: 25px;
+    height: 263px;
+    overflow-y: auto;
+  }
+  .faq-text::-webkit-scrollbar{
+    display: none;
+  }
+  .accordion .accordion-text li{
+    list-style: none;
+    cursor: pointer;
+  }
+  .accordion-text li .question-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .accordion-text li .question-arrow .question{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  .accordion-text li .question-arrow .arrow{
+    font-size: 20px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  .accordion-text li.showAnswer .question-arrow .arrow{
+    transform: rotate(-180deg);
+  }
+  .accordion-text li:hover .question-arrow .question,
+  .accordion-text li:hover .question-arrow .arrow{
+    color: rgb(255, 44, 44);
+  }
+  .accordion-text li.showAnswer .question-arrow .question,
+  .accordion-text li.showAnswer .question-arrow .arrow{
+    color:rgb(255, 44, 44);
+  }
+  .accordion-text li .line{
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .accordion-text li p{
+    width: 92%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    display: none;
+  }
+  .accordion-text li.showAnswer p{
+    display: block;
+  }
+
+  @media (max-width: 994px) {
+
+    .accordion{
+      max-width: 100%;
+      padding: 45px 60px 45px 60px;
+    }
+    .accordion .image-box{
+      height: 360px;
+      width: 220px;
+    }
+    .accordion .accordion-text{
+      width: 63%;
+    }
+  }
+  @media (max-width: 820px) {
+    .accordion{
+      flex-direction: column;
+    }
+    .accordion .image-box{
+      height: 360px;
+      width: 300px;
+      background: rgb(0, 0, 0);;
+      width: 100%;
+      border-radius: 25px;
+      padding: 30px;
+    }
+    .accordion .accordion-text{
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 538px) {
+    .accordion{
+      padding: 25px;
+    }
+    .accordion-text li p{
+      width: 98%;
+    }
+  }

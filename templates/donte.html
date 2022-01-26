@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d4ef3a9c89.js" crossorigin="anonymous"></script>
+
+	<title>Donation </title>
+
+<style type="text/css">
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+	font-family: 'Roboto',sans-serif;
+	height: 100px;
+	display: inline;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.container{
+	text-align: center;
+	width: 450px;
+	height: 600px;
+	background: transparent;
+	border-radius: 30px;
+	box-shadow: 5px 5px 10px rgba(1,1,1,3),inset 3px 3px 10px rgba(0,0,0,.2);
+}
+
+.container h1{
+	margin-top: 50px;
+	padding-top: 20px;
+	color: black;
+	letter-spacing: 3px;
+	font-weight: bold;
+
+}
+.container i{
+	transform: translateX(35px);
+	color:rgb(59,59,59);
+
+}
+
+.c{
+
+	outline: none;
+	border-radius: 30px;
+	border:2px solid red;
+	width: 300px;
+	height: 45px;
+	background: transparent;
+	margin-top: 25px;
+	padding-left: 40px;
+	padding-right: 20px;
+	margin-right: 20px;
+	font-size: 16px;
+	transition: all .4s;
+
+}
+.container button{
+	cursor:pointer;
+	width: 300px;
+	height: 45px;
+	margin-top: 25px;
+	background: rgb(43,91,224);
+	color:white;
+	font-size: 16px;
+	letter-spacing: 1px;
+	border-radius: 3px;
+	border:none;
+	outline :none;
+	transition: .4s;
+
+
+}
+.container button:hover {
+	background: rgb(36,79,196);
+	 }
+/*.container input:valid {
+	border: 2px solid red;
+}*/
+.container input:hover{
+	border: 2px solid green;
+}
+.btn-3{
+    font-size:15px;
+    margin: 15px;
+    background-color: red;
+    color: black;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.btn-3:hover{
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    transition: ease-in-out 0.5s;
+  }
+
+@media screen and (max-width: 600px) {
+	.container{
+	text-align: center;
+	width: 300px;
+	height: 400px;
+	background: transparent;
+	border-radius: 20px;
+	box-shadow: 2px 2px 6px rgba(1,1,1,3),inset 1px 1px 6px rgba(0,0,0,.2);
+}
+
+.container h1{
+	margin-top: 40px;
+	padding-top: 15px;
+	color: black;
+	letter-spacing: 2px;
+	font-weight: bold;
+
+}
+.container i{
+	transform: translateX(28px);
+	color:rgb(59,59,59);
+
+}
+.c{
+
+	outline: none;
+	border-radius: 20px;
+	border:2px solid red;
+	width: 240px;
+	height: 35px;
+	background: transparent;
+	margin-top: 15px;
+	padding-left: 29px;
+	padding-right: 10px;
+	margin-right: 10px;
+	font-size: 10px;
+	transition: all .4s;
+
+}
+.container button{
+	cursor:pointer;
+	width: 200px;
+	height: 35px;
+	margin-top: 15px;
+	background: rgb(43,91,224);
+	color:white;
+	font-size: 10px;
+	letter-spacing: 1px;
+	border-radius: 3px;
+	border:none;
+	outline :none;
+	transition: .4s;
+
+
+}
+.btn-3{
+    font-size:10px;
+    margin: 25px;
+    background-color: red;
+    color: black;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.btn-3:hover{
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    transition: ease-in-out 0.5s;
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+        <h1> Donation </h1>
+
+        <div>
+  	        <form class="needs-validation" novalidate method="post" action="/donate">{% csrf_token %}
+        <div>
+            <i class="fas fa-user"> </i>
+            <input type="text" class=" c " id="Fullname" name="name" placeholder="Full Name"  required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div>
+            <i class="fas fa-envelope"> </i>
+            <input type="email" class="c " id="email" name="email" placeholder="Enter Your Email" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+            Please choose a username.
+            </div>
+        </div>
+
+        <div>
+            <i class="fas fa-phone"> </i>
+            <input type="text" class="c " id="phone" name="phone" placeholder="Contact Number" required>
+            <div class="invalid-feedback">
+                Please provide a valid Contact Number.
+            </div>
+        </div>
+                <div>
+            <i class="fas fa-rupee-sign"> </i>
+            <input type="text" class=" c " id="money" name="money" placeholder="Money Donate"  required>
+            </div>
+       <button  type="submit">Submit </button>
+            </form>
+        </div>
+        <p style="margin:5px; padding:5px;">After submitting u will be given with a new button for the payment with razorpay.</p>
+
+     {% if payment %}
+<div class="text-center mx-auto">
+<form action="/success" method="post">
+
+<script
+    src="https://checkout.razorpay.com/v1/checkout.js"
+    data-key="rzp_test_QjQaIruAHkIeuC"
+    data-amount="{{payment.money}}"
+    data-currency="INR"
+    data-order_id="{{payment.id}}"
+    data-buttontext="Pay with Razorpay"
+    data-name="NGO DONATION"
+    data-description="We act as a fuel , creating opportunties for children or for needy people.."
+    data-image="https://example.com/your_logo.jpg"
+    data-prefill.name="Vipul Mongia"
+    data-prefill.email="mongiavipul234@gmail.com"
+    data-theme.color="#F37254">
+</script>
+<!--<input type="hidden" custom="Hidden Element" name="hidden">-->
+</form>
+{% endif %}
+</div>
+</div>
+<!--end of container-->
+
+
+
+<a href="/"><button class="btn btn-3"> back to home page</button></a>
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+</body>
+</html>
+
